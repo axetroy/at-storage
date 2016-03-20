@@ -2,6 +2,25 @@
 
 AngularJS 的storage服务。
 
+## 跟其他模块有什么区别？
+
+* bug多，haha...
+* 多了个watch，用于多窗口通信
+
+## 依赖
+
+依赖于``angularJS``
+
+## 使用
+
+bower:
+
+```bash
+bower install at-storage --save
+```
+
+引入html，然后加入模块依赖
+
 ## service
 
 * atStorage
@@ -137,7 +156,8 @@ cookie使用轮询的方式，间隔1500ms，没办法，原生api本根无法�
 >  * 如果是在服务中监听，则不用传入这个参数
 >  * 如果在控制器中监听，传入当前控制器的$scope，当控制器被销毁时(destroy)，监听函数也会被销毁，如果不传入，则是全局监听，在这里我推荐在服务中监听
 
-> return:{*}
+> return:{function}
+> 返回一个函数，执行该函数，可以取消监听
 
 ### atStorage.init()
 
