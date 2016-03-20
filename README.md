@@ -23,9 +23,7 @@ AngularJS 的storage服务。
 
 ### atStorage.isSupport
 
-> type:{object}
-
-> return:{boolean}
+> type:{boolean}
 
 检测是否支持localStorage或sessionStorage
 
@@ -36,6 +34,7 @@ IE兼容性：IE9+(Angular已经不支持I8，所以这个必然是true...)
 存储
 
 > type:{function}
+
 > arguments: 
 
 > * key{string}
