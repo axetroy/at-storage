@@ -1,0 +1,26 @@
+{
+  "name": "at-storage",
+  "description": "storage for angular",
+  "main": "at-storage.js",
+  "authors": [
+    "axetroy"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "storage",
+    "localstorage"
+  ],
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
