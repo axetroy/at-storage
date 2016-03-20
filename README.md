@@ -29,6 +29,8 @@ AngularJS 的storage服务。
 
 IE兼容性：IE9+(Angular已经不支持I8，所以这个必然是true...)
 
+如果万一为false，以下所有方法均用cookie代替
+
 ### atStorage.set(key, value, expiredTime)
 
 存储
@@ -211,7 +213,7 @@ cookie使用轮询的方式，间隔1500ms，没办法，原生api本根无法�
 
 ### atStorageProvider.setStorageType(type)
 
-设置储存方式
+设置储存方式，默认值：``localStorage``
 
 提示：当选择使用sessionStorage来储存时，``atStorage.watch``失效
 
@@ -234,3 +236,8 @@ cookie使用轮询的方式，间隔1500ms，没办法，原生api本根无法�
 
 > arguments:
 > * auto:{boolean}，是否自动初始化，为tru表示自动，为false表示手动
+
+> return:{atStorageProvider}，可链式调用
+
+# License
+项目遵循[MIT协议(The MIT License)](http://opensource.org/licenses/MIT)
