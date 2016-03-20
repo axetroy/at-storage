@@ -73,7 +73,6 @@
        * @returns {*}
        */
       this.setStorageType = function (storage) {
-        console.log(storage !== 'sessionStorage');
         if (storage !== 'localStorage' && storage !== 'sessionStorage') {
           console.error('%s must be localStorage or sessionStorage', storage);
           return this;
@@ -331,8 +330,6 @@
                 oldVal = undefined;
               }
 
-              // console.log(e);
-
               // not match the key
               if (originKey !== key) return;
 
@@ -538,7 +535,6 @@
               cons.key = _revertKey(_key);
               cons.value = _value;
               result.push(cons);
-              // console.log(cons);
             });
           }
           return result;
@@ -586,7 +582,6 @@
 
           var loop = $window.setInterval(function () {
             var allCookie = cookie.getAll();
-            console.count();
             // if no cookie or watchList is empty,clear the loop
             if (!allCookie || !allCookie.length || !Object.keys(_cookieWatchList).length) {
               loop && $window.clearInterval(loop);
