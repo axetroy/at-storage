@@ -8,7 +8,12 @@
   "license": "MIT",
   "keywords": [
     "storage",
-    "localstorage"
+    "localStorage",
+    "sessionStorage",
+    "cookie",
+    "angular",
+    "atStorage",
+    "at-storage"
   ],
   "moduleType": [
     "amd",
