@@ -182,6 +182,7 @@
 
         // not exist or expired
         if (!storage[atStorageKey] || hasExpired(originKey)) {
+          remove(originKey);
           return undefined;
         }
 
