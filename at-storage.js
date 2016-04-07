@@ -622,7 +622,7 @@
 
           });
 
-        }, 1500);
+        }, 1500);       // ? 
         _cookieIsWatching = true;
       };
 
