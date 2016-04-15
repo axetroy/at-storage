@@ -389,7 +389,6 @@
           angular.forEach(_watchList, function (watcherList) {
             angular.forEach(watcherList, function (watcher, id) {
               if (watcher.$$id === $$id) {
-                debugger;
                 watcherList = watcherList.splice(id, 1);
               }
             });
@@ -400,7 +399,6 @@
             (_watchList[key] &&
             angular.isArray(_watchList[key]) && !_watchList[key].length)) {
             _watchList[key] = undefined;
-            debugger;
             delete _watchList[key];
           }
 
