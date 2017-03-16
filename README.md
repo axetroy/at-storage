@@ -1,5 +1,7 @@
 # at-storage
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/axetroy/at-storage.svg)](https://greenkeeper.io/)
+
 AngularJS 的storage服务。
 
 ## 跟其他模块有什么区别？
